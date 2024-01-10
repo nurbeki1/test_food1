@@ -1,0 +1,56 @@
+@import url(reset.css);
+@import url(animate_media.css);
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&family=Rubik:wght@500;600;700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+  background: linear-gradient(rgba(11, 12, 42, 1), rgba(11, 12, 42, 1)),
+    url(photos/back_solar.png);
+  position: relative;
+}
+
+.home_btn {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  transition: 0.5s all;
+  z-index: 1000;
+}
+
+.home_btn a {
+  color: #ffca00;
+  font-size: 30px;
+}
+.home_btn:hover {
+  bottom: 12%;
+}
+
+.swiper {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.swiper.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(11, 12, 42, 1), rgba(11, 12, 42, 1));
+}
+.swiper-slide img {
+  max-width: 100%;
+  object-fit: cover;
+}

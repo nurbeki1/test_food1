@@ -1,0 +1,73 @@
+@import url(reset.css);
+@import url(animate_media.css);
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&family=Rubik:wght@500;600;700&display=swap");
+
+* {
+  overflow: hidden;
+}
+
+.block1 {
+  max-width: 100%;
+  min-height: 100vh;
+  background: url(photos/back2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.racket {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(0.8);
+  animation: racket 10s infinite ease;
+}
+
+.form {
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 50px 100px 50px;
+}
+
+.text h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-weight: 900;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+}
+
+.pass {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg input {
+  background: #f1f1f1;
+  padding: 7px;
+  border-radius: 5px;
+}
